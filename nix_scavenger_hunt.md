@@ -15,8 +15,39 @@ and then clone it to your development environment.
 ### Navigating the Filesystem
 
 * Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
+
+```
+/home/cabox/workspace                                
+```
+
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
+
+```
+LICENSE          nix_scavenger_hunt.md               
+README.md        nix_scavenger_hunt_stretch.md       
+```
+
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
+```
+with -alh i get (-bash: -alh: command not found)
+```
+
+with ls -alh i get
+```
+total 36K                                                    
+drwxrwxr-x 4 cabox cabox 4.0K Jul  1 22:53 .                 
+drwxr-xr-x 9 cabox cabox 4.0K Jul  1 22:53 ..                
+drwxrwxr-x 8 cabox cabox 4.0K Jul  1 22:53 .git              
+-rw-rw-r-- 1 cabox cabox 1.1K Jul  1 22:53 LICENSE           
+-rw-rw-r-- 1 cabox cabox 1.4K Jul  1 22:53 README.md         
+drwxrwxr-x 7 cabox cabox 4.0K Jul  1 22:53 challenge_        
+files                                                        
+-rw-rw-r-- 1 cabox cabox 5.5K Jul  1 23:00 nix_scaven        
+ger_hunt.md                                                  
+-rw-rw-r-- 1 cabox cabox  317 Jul  1 22:53 nix_scaven        
+ger_hunt_stretch.md  
+```
+
 * The `man` ("manual") command tells you more about how any given command works. Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
@@ -30,10 +61,30 @@ and then clone it to your development environment.
 ### Observing the System
 
 * Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
+```
+cabox
+```
+
 * Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*
+
+```
+cabox    pts/0        Jul  5 13:22 (54.186.244.104)     
+```
 * How long has your system been running? Use `uptime` to see, and *paste the result here:*
+```
+13:25:44 up 3 min,  1 user,  load average: 0.01, 0.00, 
+0.00  
+```
+
 * Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
+```
+sees to be processes and their status
+````
+
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
+```
+seems to be listing certain parts that are using the CPU and ranking them?
+```
 
 ### Finding and Viewing Files
 
