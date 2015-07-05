@@ -88,6 +88,10 @@ seems to be listing certain parts that are using the CPU and ranking them?
 
 ### Finding and Viewing Files
 
+```
+These sections i kept getting multip Command Not Found messages. so I am just going to stop here.These
+I actually miss just doing HTML and CSS which I feel I still dont have a good grasp on  and now we are learning Unix and Javascript"
+````
 * Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. *How many files did you find?*
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
